@@ -48,7 +48,7 @@ All asset paths are relative, so the site works from a repo subpath as well as a
 | What | Where |
 |---|---|
 | Hero photo | replace `assets/img/hero.svg` (or point the `<img>` at a `.jpg`) |
-| Portrait photo | replace `assets/img/portrait.svg` |
+| Portrait photo | `assets/img/portrait.jpg` — reframe the circle via the crop math in `styles.css` |
 | Testimonials, blog posts, FAQs | `index.html` — plain markup, edit in place |
 
 ### Adding a testimonial
