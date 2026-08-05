@@ -174,6 +174,63 @@
     });
   });
 
+  /* ---------- Testimonial avatars: initials fallback ----------
+     Lets you add a card before its photo exists — a missing or empty
+     src renders the data-initials in a coloured circle instead. */
+  var toInitials = function (img) {
+    var span = document.createElement('span');
+    span.className = 't-avatar fallback';
+    span.setAttribute('aria-hidden', 'true');
+    span.textContent = img.getAttribute('data-initials') || '♥';
+    if (img.parentNode) img.parentNode.replaceChild(span, img);
+  };
+
+  document.querySelectorAll('.t-avatar').forEach(function (img) {
+    var src = img.getAttribute('src');
+    if (!src) { toInitials(img); return; }
+    img.addEventListener('error', function () { toInitials(img); });
+    /* Cached/complete images that failed never fire error again. */
+    if (img.complete && img.naturalWidth === 0) toInitials(img);
+  });
+
+  /* ---------- Testimonial wall filter ---------- */
+  var wall = document.getElementById('wall');
+  var filters = document.getElementById('filters');
+
+  if (wall && filters) {
+    var cards = Array.prototype.slice.call(wall.querySelectorAll('.t-card'));
+    var countEl = document.getElementById('wallCount');
+    var emptyEl = document.getElementById('wallEmpty');
+
+    var apply = function (cat) {
+      var shown = 0;
+      cards.forEach(function (card) {
+        var cats = (card.getAttribute('data-cat') || '').split(/\s+/);
+        var match = cat === 'all' || cats.indexOf(cat) !== -1;
+        card.classList.toggle('is-hidden', !match);
+        if (match) shown++;
+      });
+      if (countEl) {
+        countEl.textContent = shown + (shown === 1 ? ' story' : ' stories') +
+          (cat === 'all' ? '' : ' in this category');
+      }
+      if (emptyEl) emptyEl.hidden = shown !== 0;
+    };
+
+    filters.addEventListener('click', function (e) {
+      var btn = e.target.closest('.filter');
+      if (!btn) return;
+      Array.prototype.forEach.call(filters.querySelectorAll('.filter'), function (b) {
+        var on = b === btn;
+        b.classList.toggle('is-on', on);
+        b.setAttribute('aria-pressed', String(on));
+      });
+      apply(btn.getAttribute('data-filter'));
+    });
+
+    apply('all');
+  }
+
   /* ---------- Contact form ---------- */
   var form = document.getElementById('contactForm');
   var status = document.getElementById('formStatus');

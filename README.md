@@ -51,6 +51,19 @@ All asset paths are relative, so the site works from a repo subpath as well as a
 | Portrait photo | replace `assets/img/portrait.svg` |
 | Testimonials, blog posts, FAQs | `index.html` — plain markup, edit in place |
 
+### Adding a testimonial
+
+Full wall lives on `testimonials.html`; the home page keeps a 3-card carousel plus a "Read All Testimonials" link.
+
+1. Drop the photo into `assets/img/testimonials/` — square crop, ~400×400, `.jpg` or `.webp`
+2. Copy any `<figure class="t-card">` block in `testimonials.html` and edit the name, meta line and quote
+3. Point `src` at the new file and set `data-initials` (used if the photo is ever missing)
+4. Set `data-cat` to one or more of: `children autism fluency adults voice online` — this drives the filter buttons
+
+No photo yet? Leave `src=""`. The card renders a coloured circle with the initials instead — the layout never breaks, so you can publish the quote and add the picture later.
+
+To add a filter button, copy one in the `#filters` block and give it a `data-filter` matching a `data-cat` value.
+
 ### Contact form
 
 The form currently falls back to opening the visitor's email client. To receive submissions in an inbox instead, create a free [Formspree](https://formspree.io) form and swap the endpoint:
