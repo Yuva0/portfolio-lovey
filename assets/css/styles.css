@@ -216,10 +216,13 @@ svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.7;stroke
   display:grid;grid-template-columns:auto 1.1fr 1fr;gap:44px;align-items:center;
 }
 /* Circular crop framed on the face.
-   The source is a full-length 960x1280 photo; the window below shows
-   source px x:305-665, y:430-790 (head and shoulders, face centred).
-   Percentages, so the framing holds at any circle size.
-   Re-crop for a different photo: window = 210 / (source crop width). */
+   Source is a 1624x1757 portrait; the window below shows source px
+   x:305-1455, y:49-1199 — head and shoulders, face centred, eyes at
+   about a third from the top. Percentages, so the framing holds at
+   any circle size.
+   Re-crop for a new photo: scale = 210 / crop_width_px;
+   width% = source_width * scale / 210; left% = -crop_x * scale / 210;
+   top% = -crop_y * scale / 210. */
 .about-photo{
   width:210px;height:210px;flex:none;position:relative;
   border-radius:50%;overflow:hidden;
@@ -228,8 +231,8 @@ svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.7;stroke
 }
 .about-photo img{
   position:absolute;max-width:none;
-  width:266.7%;height:auto;
-  left:-84.8%;top:-119.5%;
+  width:141.2%;height:auto;
+  left:-26.5%;top:-4.3%;
 }
 .about-copy h2{font-size:1.7rem}
 .about-copy p{color:var(--ink-2);font-size:.98rem}
