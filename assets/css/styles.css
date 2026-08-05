@@ -215,9 +215,21 @@ svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.7;stroke
 .about-inner{
   display:grid;grid-template-columns:auto 1.1fr 1fr;gap:44px;align-items:center;
 }
-.about-photo img{
-  width:210px;height:210px;border-radius:50%;object-fit:cover;
+/* Circular crop framed on the face.
+   The source is a full-length 960x1280 photo; the window below shows
+   source px x:305-665, y:430-790 (head and shoulders, face centred).
+   Percentages, so the framing holds at any circle size.
+   Re-crop for a different photo: window = 210 / (source crop width). */
+.about-photo{
+  width:210px;height:210px;flex:none;position:relative;
+  border-radius:50%;overflow:hidden;
   border:6px solid #fff;box-shadow:var(--shadow);
+  background:var(--teal-100);
+}
+.about-photo img{
+  position:absolute;max-width:none;
+  width:266.7%;height:auto;
+  left:-84.8%;top:-119.5%;
 }
 .about-copy h2{font-size:1.7rem}
 .about-copy p{color:var(--ink-2);font-size:.98rem}
