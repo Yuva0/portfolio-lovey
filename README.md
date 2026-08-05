@@ -6,7 +6,7 @@ Static one-page website (HTML + CSS + vanilla JS), built to be served straight f
 
 ```
 index.html              all sections (hero, services, about, conditions,
-                        process, testimonials, FAQs, blog, contact)
+                        process, testimonials, FAQs, contact)
 assets/css/styles.css   design tokens + all styling, responsive
 assets/js/main.js       nav, scroll-spy, reveal animations, slider, form
 assets/img/             hero illustration, portrait, favicon (SVG placeholders)
@@ -49,7 +49,7 @@ All asset paths are relative, so the site works from a repo subpath as well as a
 |---|---|
 | Hero photo | replace `assets/img/hero.svg` (or point the `<img>` at a `.jpg`) |
 | Portrait photo | `assets/img/portrait.jpg` — reframe the circle via the crop math in `styles.css` |
-| Testimonials, blog posts, FAQs | `index.html` — plain markup, edit in place |
+| Testimonials, FAQs | `index.html` — plain markup, edit in place |
 
 ### Adding a testimonial
 
