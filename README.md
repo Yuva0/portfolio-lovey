@@ -51,6 +51,19 @@ All asset paths are relative, so the site works from a repo subpath as well as a
 | Portrait photo | `assets/img/portrait.jpg` — reframe the circle via the crop math in `styles.css` |
 | Testimonials, blog posts, FAQs | `index.html` — plain markup, edit in place |
 
+### Adding a session photo
+
+"Inside a Session" sits between Process and Testimonials on the home page — 8 tiles, click any one to open a lightbox (arrow keys, swipe, Esc to close).
+
+1. Drop the image into `assets/img/sessions/` — landscape or square, ~1200px wide
+2. In `index.html`, copy a `<button class="shot">` block and point both `src` and `data-full` at the file
+3. Write a real `alt` description — it doubles as the lightbox caption
+4. `shot-wide` on the first tile makes it span 2×2; drop the class for a normal square
+
+A tile whose file is missing turns into a soft placeholder with the caption and stops being clickable — so captions can go up before the photos do.
+
+Only publish photos you hold parental consent for. The section carries a "Photos shared with parental consent" note.
+
 ### Adding a testimonial
 
 Full wall lives on `testimonials.html`; the home page keeps a 3-card carousel plus a "Read All Testimonials" link.
