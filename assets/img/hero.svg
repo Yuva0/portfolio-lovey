@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="900" height="640" role="img" aria-label="Illustration of a speech-language pathologist showing a picture card to a young child">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf4ea"/>
+      <stop offset="1" stop-color="#f3e7d6"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="900" height="640" rx="4"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="900" height="640" fill="url(#wall)"/>
+
+    <!-- shelf -->
+    <rect x="520" y="70" width="330" height="14" rx="6" fill="#d9c3a5"/>
+    <rect x="520" y="200" width="330" height="14" rx="6" fill="#d9c3a5"/>
+    <g fill="#c9d9cf">
+      <rect x="548" y="18" width="16" height="52" rx="3" fill="#7fb8a4"/>
+      <rect x="568" y="26" width="14" height="44" rx="3" fill="#e5a48c"/>
+      <rect x="586" y="14" width="18" height="56" rx="3" fill="#f0c96a"/>
+      <rect x="608" y="30" width="12" height="40" rx="3" fill="#9aa8d8"/>
+    </g>
+    <circle cx="700" cy="48" r="22" fill="#e8c9a0"/>
+    <path d="M760 70c0-24 12-38 28-38s28 14 28 38z" fill="#cfe0d5"/>
+    <g fill="#8fc0a9">
+      <path d="M560 200c-14-6-22-20-20-38 18-2 32 8 36 24z"/>
+      <path d="M582 200c14-6 22-20 20-38-18-2-32 8-36 24z"/>
+      <rect x="566" y="196" width="26" height="6" rx="3" fill="#c98f63"/>
+    </g>
+    <rect x="640" y="156" width="60" height="44" rx="6" fill="#e2b7a0"/>
+    <rect x="712" y="150" width="48" height="50" rx="6" fill="#a9c8e4"/>
+    <rect x="776" y="164" width="54" height="36" rx="6" fill="#f0d8a0"/>
+
+    <!-- floor / table -->
+    <rect y="470" width="900" height="170" fill="#efe0cc"/>
+    <rect y="470" width="900" height="18" fill="#e2cdb2"/>
+
+    <!-- adult figure (left) -->
+    <g>
+      <path d="M196 470c0-92 44-142 118-142s118 50 118 142z" fill="#cddcc9"/>
+      <path d="M232 470c4-70 30-110 82-110s78 40 82 110z" fill="#dbe7d6"/>
+      <circle cx="314" cy="252" r="66" fill="#e8b591"/>
+      <path d="M248 250c0-56 30-88 66-88s66 32 66 88c0-30-16-44-34-46-22-2-38 6-56-2-14-6-22 14-22 48z" fill="#3d2b26"/>
+      <path d="M244 250c-14 46-6 92 10 116-26-40-30-92-10-116z" fill="#3d2b26"/>
+      <path d="M384 250c14 46 6 92-10 116 26-40 30-92 10-116z" fill="#3d2b26"/>
+      <circle cx="292" cy="256" r="5" fill="#33231f"/>
+      <circle cx="336" cy="256" r="5" fill="#33231f"/>
+      <path d="M298 286c10 9 22 9 32 0" stroke="#b9704f" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <!-- arm holding card -->
+      <path d="M400 400c40 6 74 26 96 52l-46 34c-22-24-46-38-72-42z" fill="#dbe7d6"/>
+      <circle cx="498" cy="470" r="24" fill="#e8b591"/>
+    </g>
+
+    <!-- picture card -->
+    <g transform="rotate(-6 560 380)">
+      <rect x="482" y="286" width="152" height="196" rx="10" fill="#ffffff" stroke="#e0d3c0" stroke-width="3"/>
+      <circle cx="558" cy="366" r="44" fill="#c98f63"/>
+      <circle cx="528" cy="330" r="15" fill="#c98f63"/>
+      <circle cx="588" cy="330" r="15" fill="#c98f63"/>
+      <circle cx="544" cy="360" r="6" fill="#4a3227"/>
+      <circle cx="572" cy="360" r="6" fill="#4a3227"/>
+      <ellipse cx="558" cy="382" rx="16" ry="12" fill="#e8c9a0"/>
+      <circle cx="558" cy="378" r="5" fill="#4a3227"/>
+      <text x="558" y="452" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#4a3227" letter-spacing="2">BEAR</text>
+    </g>
+
+    <!-- child figure (right) -->
+    <g>
+      <path d="M640 470c0-70 34-108 90-108s90 38 90 108z" fill="#f3c9d3"/>
+      <circle cx="730" cy="292" r="56" fill="#eab894"/>
+      <path d="M676 288c0-46 24-72 54-72s54 26 54 72c-6-26-24-36-54-36s-48 10-54 36z" fill="#3d2b26"/>
+      <path d="M784 300c22 6 34 24 30 44-10-16-20-26-34-30z" fill="#3d2b26"/>
+      <circle cx="820" cy="344" r="14" fill="#f0a8bd"/>
+      <circle cx="710" cy="296" r="5" fill="#33231f"/>
+      <circle cx="750" cy="296" r="5" fill="#33231f"/>
+      <path d="M716 322c8 8 20 8 28 0" stroke="#b9704f" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M652 414c-24 12-40 32-46 56l52 12c4-14 12-24 24-30z" fill="#f3c9d3"/>
+    </g>
+
+    <!-- ring stacker -->
+    <g>
+      <ellipse cx="196" cy="470" rx="66" ry="14" fill="#e2cdb2"/>
+      <rect x="190" y="352" width="12" height="112" rx="6" fill="#c98f63"/>
+      <ellipse cx="196" cy="452" rx="60" ry="18" fill="#7bb8e0"/>
+      <ellipse cx="196" cy="424" rx="50" ry="16" fill="#8ac48a"/>
+      <ellipse cx="196" cy="398" rx="42" ry="14" fill="#f2d066"/>
+      <ellipse cx="196" cy="376" rx="34" ry="12" fill="#f0a05a"/>
+      <ellipse cx="196" cy="358" rx="26" ry="10" fill="#ea7d84"/>
+      <circle cx="196" cy="344" r="14" fill="#9b8ad4"/>
+    </g>
+
+    <!-- flash cards on table -->
+    <g fill="#ffffff" stroke="#e0d3c0" stroke-width="3">
+      <rect x="300" y="486" width="86" height="60" rx="8" transform="rotate(-8 343 516)"/>
+      <rect x="404" y="492" width="86" height="60" rx="8" transform="rotate(4 447 522)"/>
+      <rect x="508" y="486" width="86" height="60" rx="8" transform="rotate(-5 551 516)"/>
+    </g>
+    <g fill="#8fc0a9" opacity=".85">
+      <circle cx="343" cy="514" r="16"/>
+      <rect x="431" y="504" width="32" height="32" rx="6" fill="#f0b070"/>
+      <path d="M551 500l16 28h-32z" fill="#7bb8e0"/>
+    </g>
+  </g>
+</svg>
