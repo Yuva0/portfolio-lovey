@@ -217,7 +217,7 @@ svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.7;stroke
 }
 /* Circular crop framed on the face.
    Source is a 913x1600 portrait; the window below shows source px
-   x:25-795, y:180-950 — head and shoulders, face centred, eyes at
+   x:0-890, y:146-1036 — head and shoulders, eyes at
    about a third from the top. Percentages, so the framing holds at
    any circle size.
    Re-crop for a new photo: scale = 210 / crop_width_px;
@@ -231,8 +231,8 @@ svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.7;stroke
 }
 .about-photo img{
   position:absolute;max-width:none;
-  width:118.6%;height:auto;
-  left:-3.2%;top:-23.4%;
+  width:102.6%;height:auto;
+  left:0;top:-16.4%;
 }
 .about-copy h2{font-size:1.7rem}
 .about-copy p{color:var(--ink-2);font-size:.98rem}
