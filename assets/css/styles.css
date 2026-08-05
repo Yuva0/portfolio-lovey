@@ -327,28 +327,6 @@ svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.7;stroke
 .faq[open] summary::after{transform:rotate(-135deg);margin-top:-2px}
 .faq p{margin:0 0 18px;color:var(--ink-2);font-size:.95rem}
 
-/* ---------- Blog ---------- */
-.blog{background:var(--cream-2)}
-.post-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.post{
-  background:#fff;border-radius:var(--radius);overflow:hidden;
-  box-shadow:var(--shadow-sm);transition:transform .25s ease,box-shadow .25s ease;
-}
-.post:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
-.post-thumb{display:block;height:150px}
-.t-green{background:linear-gradient(135deg,#dff0e5,#b9dfc9)}
-.t-peach{background:linear-gradient(135deg,#fde9d9,#f8c9a6)}
-.t-blue{background:linear-gradient(135deg,#e3eefc,#bcd6f4)}
-.post-body{padding:22px}
-.post-tag{
-  display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;
-  text-transform:uppercase;color:var(--teal-700);margin-bottom:10px;
-}
-.post h3{font-size:1.1rem;margin-bottom:8px}
-.post p{font-size:.92rem;color:var(--ink-2);margin-bottom:14px}
-.post-link{font-weight:600;font-size:.9rem;color:var(--teal-700)}
-.post-link:hover{text-decoration:underline}
-
 /* ---------- Contact ---------- */
 .contact{display:block}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr 1.25fr;align-items:stretch}
@@ -497,7 +475,6 @@ svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.7;stroke
   .service-grid{grid-template-columns:repeat(2,1fr)}
   .steps{grid-template-columns:repeat(2,1fr)}
   .quote{flex:0 0 100%}
-  .post-grid{grid-template-columns:1fr}
   .about-inner{grid-template-columns:1fr;text-align:center;justify-items:center}
   .about-copy .btn{display:inline-flex}
   .about-points li{text-align:left}
