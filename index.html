@@ -62,7 +62,6 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#conditions">Conditions</a></li>
         <li><a href="#process">Process</a></li>
-        <li><a href="#sessions">Sessions</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#faqs">FAQs</a></li>
       </ul>
@@ -308,66 +307,6 @@
   </div>
 </section>
 
-<!-- ============ INSIDE A SESSION ============ -->
-<section class="section sessions" id="sessions">
-  <div class="container">
-    <h2 class="section-title">Inside a Session</h2>
-    <p class="section-sub">Therapy looks like play, and that is the point. Here is what a session actually involves.</p>
-
-    <!--
-      ADD A SESSION PHOTO
-      1. Drop the image in assets/img/sessions/ (landscape or square, ~1200px wide)
-      2. Copy a <button class="shot"> block below; point src and data-full at the file
-      3. Write a real alt description — it is read aloud by screen readers
-      A missing file degrades to a soft placeholder tile, so a caption can go up
-      before its photo does. Only publish photos you have parental consent for.
-    -->
-    <div class="shots" id="shots">
-      <button class="shot shot-wide" type="button" data-full="assets/img/sessions/session-01.jpg">
-        <img src="assets/img/sessions/session-01.jpg" alt="Picture-card play during an articulation session" loading="lazy" />
-        <span class="shot-cap">Picture-card play</span>
-      </button>
-
-      <button class="shot" type="button" data-full="assets/img/sessions/session-02.jpg">
-        <img src="assets/img/sessions/session-02.jpg" alt="Mirror work practising mouth and tongue placement" loading="lazy" />
-        <span class="shot-cap">Mirror work</span>
-      </button>
-
-      <button class="shot" type="button" data-full="assets/img/sessions/session-03.jpg">
-        <img src="assets/img/sessions/session-03.jpg" alt="Building a tower while naming colours and shapes" loading="lazy" />
-        <span class="shot-cap">Play-based language</span>
-      </button>
-
-      <button class="shot" type="button" data-full="assets/img/sessions/session-04.jpg">
-        <img src="assets/img/sessions/session-04.jpg" alt="Shared story-book reading to build vocabulary" loading="lazy" />
-        <span class="shot-cap">Story time</span>
-      </button>
-
-      <button class="shot" type="button" data-full="assets/img/sessions/session-05.jpg">
-        <img src="assets/img/sessions/session-05.jpg" alt="An online session on screen with a child at home" loading="lazy" />
-        <span class="shot-cap">Online session</span>
-      </button>
-
-      <button class="shot" type="button" data-full="assets/img/sessions/session-06.jpg">
-        <img src="assets/img/sessions/session-06.jpg" alt="Sorting activity used to practise sentence building" loading="lazy" />
-        <span class="shot-cap">Sorting &amp; sequencing</span>
-      </button>
-
-      <button class="shot" type="button" data-full="assets/img/sessions/session-07.jpg">
-        <img src="assets/img/sessions/session-07.jpg" alt="Parent joining the session to learn home strategies" loading="lazy" />
-        <span class="shot-cap">Parent coaching</span>
-      </button>
-
-      <button class="shot" type="button" data-full="assets/img/sessions/session-08.jpg">
-        <img src="assets/img/sessions/session-08.jpg" alt="Reward chart marking progress at the end of a session" loading="lazy" />
-        <span class="shot-cap">Tracking progress</span>
-      </button>
-    </div>
-
-    <p class="shots-note">Photos shared with parental consent.</p>
-  </div>
-</section>
-
 <!-- ============ TESTIMONIALS ============ -->
 <section class="section testimonials" id="testimonials">
   <span class="leaf leaf-l" aria-hidden="true"></span>
@@ -529,23 +468,6 @@
 <a class="whatsapp-float" href="https://wa.me/919890751148" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.4L3 29l6.8-1.8A13 13 0 1 0 16 3Zm7.5 18.3c-.3.9-1.8 1.7-2.5 1.8-.6.1-1.4.1-2.3-.1-.5-.2-1.2-.4-2.1-.8-3.7-1.6-6.1-5.3-6.3-5.6-.2-.2-1.5-2-1.5-3.8s.9-2.7 1.3-3.1c.3-.4.7-.5 1-.5h.7c.2 0 .5 0 .8.6l1.1 2.6c.1.2.2.4 0 .7l-.4.6-.4.5c-.2.2-.4.4-.2.7.2.4.9 1.6 2 2.5 1.4 1.2 2.5 1.6 2.9 1.8.3.1.5.1.7-.1l1-1.2c.2-.3.5-.2.8-.1l2.4 1.2c.4.2.6.3.7.4.1.3.1.9-.2 1.8Z"/></svg>
 </a>
-
-<!-- ============ LIGHTBOX ============ -->
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Session photo" hidden>
-  <button class="lb-btn lb-close" id="lbClose" type="button" aria-label="Close">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
-  </button>
-  <button class="lb-btn lb-prev" id="lbPrev" type="button" aria-label="Previous photo">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
-  </button>
-  <figure class="lb-stage">
-    <img id="lbImg" src="" alt="" />
-    <figcaption id="lbCap"></figcaption>
-  </figure>
-  <button class="lb-btn lb-next" id="lbNext" type="button" aria-label="Next photo">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-  </button>
-</div>
 
 <script src="assets/js/main.js"></script>
 </body>

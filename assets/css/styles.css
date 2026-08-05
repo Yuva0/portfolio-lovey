@@ -376,63 +376,6 @@ svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.7;stroke
 .whatsapp-float svg{width:32px;height:32px;stroke:none}
 .whatsapp-float:hover{transform:scale(1.09)}
 
-/* ---------- Inside a Session ---------- */
-.sessions{background:var(--white)}
-.shots{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  grid-auto-rows:1fr;gap:16px;margin-top:44px;
-}
-.shot{
-  position:relative;overflow:hidden;padding:0;
-  border-radius:var(--radius);aspect-ratio:1;
-  background:var(--teal-100);
-  transition:transform .28s ease,box-shadow .28s ease;
-}
-.shot-wide{grid-column:span 2;grid-row:span 2}
-.shot img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
-.shot:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-.shot:hover img{transform:scale(1.06)}
-.shot-cap{
-  position:absolute;left:0;right:0;bottom:0;
-  padding:26px 14px 12px;text-align:left;
-  font-size:.85rem;font-weight:600;color:#fff;
-  background:linear-gradient(transparent,rgba(11,40,36,.72));
-}
-/* Missing photo: keep the tile, show the caption on a soft placeholder. */
-.shot.no-img{background:var(--cream-2);cursor:default}
-.shot.no-img img{display:none}
-.shot.no-img::before{
-  content:"";position:absolute;inset:0;
-  background:var(--teal-100) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f7a6b' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round' opacity='.55'%3E%3Crect x='3' y='5' width='18' height='14' rx='2'/%3E%3Ccircle cx='8.5' cy='10' r='1.5'/%3E%3Cpath d='m4 17 5-5 4 4 3-2 4 3'/%3E%3C/svg%3E") center/44px no-repeat;
-}
-.shot.no-img .shot-cap{color:var(--ink-2);background:none;text-align:center;padding:12px}
-.shots-note{text-align:center;font-size:.82rem;color:var(--muted);margin-top:22px}
-
-/* ---------- Lightbox ---------- */
-.lightbox{
-  position:fixed;inset:0;z-index:120;
-  display:flex;align-items:center;justify-content:center;gap:12px;
-  padding:24px;background:rgba(11,40,36,.9);
-  animation:lbIn .2s ease;
-}
-.lightbox[hidden]{display:none}
-@keyframes lbIn{from{opacity:0}to{opacity:1}}
-.lb-stage{margin:0;max-width:min(1000px,88vw);text-align:center}
-.lb-stage img{
-  max-width:100%;max-height:78vh;width:auto;border-radius:var(--radius);
-  box-shadow:var(--shadow-lg);
-}
-.lb-stage figcaption{color:#fff;font-size:.9rem;margin-top:14px}
-.lb-btn{
-  width:46px;height:46px;flex:none;border-radius:50%;
-  display:grid;place-items:center;color:#fff;
-  background:rgba(255,255,255,.14);
-  transition:background .2s ease,transform .2s ease;
-}
-.lb-btn svg{width:22px;height:22px;stroke-width:2}
-.lb-btn:hover{background:rgba(255,255,255,.28);transform:scale(1.06)}
-.lb-close{position:absolute;top:20px;right:22px}
-
 /* ---------- Testimonials page ---------- */
 .page-hero{position:relative;overflow:hidden;background:var(--cream);padding:56px 0 52px;text-align:center}
 .page-hero .container{position:relative;z-index:1}
@@ -502,7 +445,6 @@ svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.7;stroke
   .contact-cta{grid-column:1/-1;padding:48px 40px}
   .contact-grid.two-up .contact-cta{grid-column:auto}
   .wall{columns:2}
-  .shots{grid-template-columns:repeat(3,1fr)}
 }
 
 @media (max-width:900px){
@@ -542,10 +484,6 @@ svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.7;stroke
   .contact-grid,.contact-grid.two-up{grid-template-columns:1fr}
   .contact-cta,.contact-details,.contact-form-wrap{padding:42px 24px}
   .wall{columns:1}
-  .shots{grid-template-columns:repeat(2,1fr);gap:12px}
-  .shot-wide{grid-column:span 2;grid-row:auto;aspect-ratio:16/10}
-  .lightbox{padding:12px;gap:4px}
-  .lb-btn{width:40px;height:40px}
   .filters{gap:8px}
   .filter{padding:8px 14px;font-size:.84rem}
   .footer-inner{flex-direction:column;text-align:center}
